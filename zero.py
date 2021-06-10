@@ -9,18 +9,31 @@
 # print(type((1, 2, 3))) # tuple => Tuple
 # print(type({"One": 1, "Two": 2})) # dict => Dictionary
 # print(type(2 == 2)) # bool => Boolean
+# print(type(True))
+# print(type(False))
+# print(type(1.23244))
+# print(type((2, 3, 'Simon', True)))
 
 # -----------------
 # Variables
 # Syntex => [variable name] [assignment] [value]
 # -----------------
-# name = 'Simon' # isngle word => normal
+# name = 'Simon' # single word => normal
 # myName = 'Simon' # two words => camelCase
 # my_name = 'Simon' # two words => snake_case
 
 # print(name)
 # print(my_name)
 # print(myName)
+
+# products = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# product_count = len(products)
+# print(f'all products count: {product_count}')
+
+# help('keywords')
+
+# a, b, c = 1, 2, 3
+# print(a, b, c)
 
 # -----------------
 # Source Code: Original code you write it on computer
@@ -47,6 +60,7 @@
 
 # print("Hello \"Simon\"")
 # print("Hello \nSimmon")
+# print("Hello \"Simon\"")
 
 # carrige return
 # print('123456\rabcd')
@@ -56,6 +70,7 @@
 
 # Charecter's hax value
 # print("\x73")
+# print("\x56")
 
 
 # -----------------
@@ -63,18 +78,25 @@
 # -----------------
 # name = 'Simon'
 # msg = 'Love you'
-
 # print(msg + " " + name)
+
+# a = "20"
+# b = "2"
+# print(a + b)
+# print(int(a) + int(b))
 
 # -----------------
 # String
 # -----------------
 
 # name = 'Simon'
+# print(name[-1])
 # print(name[-5])
 
 # Slicing
-# print(name[2:4])
+# print(name[2:4]) 
+# print(name[1:-1]) 
+# print(name[1:3]) 
 
 # ---------------------------------
 # String Methods
@@ -91,20 +113,34 @@
 # print(title.upper())
 # print(title.lower())
 
+# msg = 'Hello simon'
+# print(msg.capitalize())
+# print(msg.upper())
+# print(msg.lower())
+
 # num = "102"
-# print(num.zfill(5))
+# print(num.zfill(10))
+# print(num.zfill(0))
+# print(type(num.zfill(5)))
+
 
 # split() rsplit()
 # a = 'I Love Python'
 # print(a.split())
+# print(a.rsplit())
 
 # center()
 # name = 'Simon'
-# print(name.center(9, "@"))
+# print(name.center(20))
+# print(name.center(20, "*"))
+# print(name.center(20, "@"))
 
 # count()
 # a = 'I Love Python and Python'
-# print(a.count("Python"))
+# print(a.count("P"))
+# print(a.count("Py"))
+# print(a.count("Py", 10))
+# print(a.count("Py", 10, 12))
 
 # swapcase()
 # a = 'I Love Python'
@@ -116,27 +152,40 @@
 # a = 'Love You Simon'
 # print(a.startswith('L'))
 # print(a.endswith("N"))
+# print(a.endswith("n"))
 
 # index(substring, start, end)
 # a = 'I Love Python'
 # print(a.index('P', 0, 8))
+# print(a.index('a', 0, 8))
 # print(a.find('P', 0, 8))
+# print(a.find('a', 0, 8))
 
-# rjust(width, fill, char) ljust(width, fill, char)
+# rjust(width, fill_char) ljust(width, fill_char)
 # a = 'I Love Python'
+# print(a.rjust(20))
 # print(a.rjust(20, '$'))
+# print(a.rjust(20, '*'))
+# print(a.ljust(20))
 # print(a.ljust(20, '@'))
+# print(a.ljust(20, '*'))
 
 # splitlines
 # a = ''' I
 # Love
 # Python'''
+# print(a)
 # print(a.splitlines())
 # b = 'I\nLove\nPython'
+# c = 'I\nLove\nPy\nthon'
 # print(b.splitlines())
+# print(c.splitlines())
 
 # expandtabs()
 # a = 'I\tLove\tPython'
+# print(a)
+# print(a.expandtabs())
+# print(a.expandtabs(8))
 # print(a.expandtabs(1))
 
 
@@ -151,12 +200,15 @@
 # c = ' '
 # d = ''
 # print(c.isspace(), d.isspace())
+
 # a = 'i love python'
 # b = 'I Love python'
 # print(a.islower(), b.islower())
+
 # a = 'simon_kabir'
 # b = 'simon--kabir'
 # print(a.isidentifier(), b.isidentifier())
+
 # a = 'abcz'
 # b = 'abc123'
 # print(a.isalpha())
@@ -166,10 +218,15 @@
 # replace(oldvalue, newvalue)
 # a = 'I Love PHP'
 # print(a.replace('PHP', 'Python'))
+# print(a.replace('o', 'u'))
+# print(a.replace('P', 'p'))
+
 # name = ['Badre', 'Basem', 'Simon']
+# print(type(name))
 # print('-'.join(name))
 # print(' '.join(name))
 # print(','.join(name))
+# print('*'.join(name))
 # print(type(','.join(name)))
 
 # ---------------------------------
@@ -197,7 +254,7 @@
 # --------Trancate String in old way----------
 # msg = 'Hello There! I Love You All'
 # print('Today\'s Message Is: %s' % msg)
-# print('Today\'s Message Is: %.12s' % msg)
+# print('Today\'s Message Is: %.18s' % msg)
 
 # ---------placeholder In New Way--------------
 # name = 'Simon'
@@ -210,7 +267,7 @@
 # --------Trancate String in new way----------
 # msg = 'Hello There! I Love You All'
 # print('Today\'s Message Is: {}'.format(msg))
-# print('Today\'s Message Is: {:.12s}'.format(msg))
+# print('Today\'s Message Is: {:.19s}'.format(msg))
 
 # ------Formate Money---------
 # myMoney = 523402340223
@@ -253,6 +310,7 @@
 # print(2.44 - 10.3)
 # print(5 + 10 * 100)
 # print((5 + 10) * 100)
+# print(5 + (10 * 100))
 # print(100 / 20)
 # print(int(100 / 20))
 # print(8 % 2)
@@ -260,7 +318,12 @@
 
 # -----------Exponents-----------
 # print(3 ** 4)
+# print(3 ** 5)
+# print(3 ** 10)
+# print(2 ** 3)
 # print(3 * 3 * 3 * 3)
+# print(3 * 3 * 3 * 3 * 3)
+# print(3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3)
 
 # Floor Division
 # print(100 // 20)
@@ -272,14 +335,17 @@
 # ---------------------------------
 # -----------Lists----------------
 # ----------------------------------
-# myList = ['Simon', 'Jimon', 27, False, 5.4]
+myList = ['Simon', 'Jimon', 27, False, 5.4]
 # print(myList)
+# print(type(myList))
 # print(type(myList[-1]))
+# print(type(myList[2]))
+# print(type(myList[0]))
 # print(type(myList[1:3]))
 # print(myList[:3])
 # print(myList[2:])
 # print(myList[::1])
-# print(myList[::2])
+# print(myList[::4])
 # print(myList[::3])
 # myList[2] = 28
 # myList[-2] = True
