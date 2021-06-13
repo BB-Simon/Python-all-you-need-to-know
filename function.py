@@ -2,10 +2,10 @@
 #     return 'Hi Simon'
 # greeting = sayHi()
 
+# print(sayHi())
 # print(greeting)
 
 # a, b, c = 'Simon', 'Jimon', 'Takmina'
-
 
 # def say_Hello(name):
 #     print(f'Hello {name}')
@@ -22,7 +22,8 @@
 #         print(x + y)
 
 
-# add(-50, 100)
+# add("23", 100)
+# add(23, 100)
 
 # def full_name(fname, mname, lname):
 #     print(f'Hello {fname.strip().capitalize()} {mname.upper():.1s} {lname}')
@@ -40,6 +41,7 @@
 #     names = [a, b, c]
 #     for name in names:
 #         print(f'Hello {name}')
+
 
 # hello('Simon', 'Jimon', 'Takmina', 'Souvo')
 
@@ -77,7 +79,7 @@
 # -------------------------------------------------
 
 # def show_skills(*skills):
-#     print(type(skills))
+    # print(type(skills))
 #     for skill in skills:
 #         print(f' - {skill}')
 
@@ -96,8 +98,6 @@
 #     'css': '99%',
 #     'Go': '76%'
 # }
-
-
 # def show_skills(**skills):  # show_skills() takes 0 positional arguments but 1 was given
 #     print(type(skills))
 #     for skill, value in skills.items():
@@ -126,9 +126,7 @@
 #     'NodeJS': '78%'
 # }
 
-
 # def show_skills(name, *my_tuple, **my_dict):
-
 #     print(type(my_tuple))
 #     print(type(my_dict))
 
@@ -179,10 +177,10 @@
 # --------------------------------------------------
 
 # Test Word [wwwooorrrldd]
-# x = 'wwwooorr
-# rldd'
+# x = 'wwwooorrrldd'
 # print(x[1:])
 # print(len(x))
+
 
 # def cleen_word(word):
 #     if len(word) == 1:
@@ -212,14 +210,14 @@
 
 # print(say_Hello('Simon'))
 
-def say_Hello(name, age): return f'Hello {name}, And Your Age Is: {age}'
-print(say_Hello('Simon', 28))
-print(say_Hello.__name__)
-print(type(say_Hello))
+# def say_Hello(name, age): return f'Hello {name}, And Your Age Is: {age}'
+# print(say_Hello('Simon', 28))
+# print(say_Hello.__name__)
+# print(type(say_Hello))
 
-print('-' * 30)
+# print('-' * 30)
 
-hello = lambda name, age : f'Hello {name} And Your Age Is: {age}'
-print(hello('Simon', 28))
-print(hello.__name__)
-print(type(hello))
+# hello = lambda name, age : f'Hello {name} And Your Age Is: {age}'
+# print(hello('Simon', 28))
+# print(hello.__name__)
+# print(type(hello))

@@ -1,7 +1,7 @@
 name = 'Simon'
 country = 'Bangladesh'
 city = 'Bibaria'
-village = 'Monipor'
+village = 'Korighor'
 
 if country == 'Bangladesh':
     print(f'I Love You {name}')

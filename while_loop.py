@@ -33,17 +33,17 @@
 # ----------Password Guess----------
 # -----------------------------
 
-tries = 2
-main_password = 'simon123'
-input_password = input('Enter Your Password: ')
-while input_password != main_password:
-    tries -= 1
-    print(
-        f"Wrong Password, { 'Last Chance' if tries == 0 else f'{tries} Chances' } Left")
-    input_password = input('Enter Your Password: ')
+# tries = 2
+# main_password = 'simon123'
+# input_password = input('Enter Your Password: ')
+# while input_password != main_password:
+#     tries -= 1
+#     print(
+#         f"Wrong Password, { 'Last Chance' if tries == 0 else f'{tries} Chances' } Left")
+#     input_password = input('Enter Your Password: ')
 
-    if tries == 0:
-        print('Oops...! All Chances Are Finished')
-        break
-else:
-    print('It\'s Done...! Happy Codding')
+#     if tries == 0:
+#         print('Oops...! All Chances Are Finished')
+#         break
+# else:
+#     print('It\'s Done...! Happy Codding')

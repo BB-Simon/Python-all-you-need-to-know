@@ -6,11 +6,20 @@
 #     'age': 28,
 #     'country': 'Bangladesh'
 # }
-
 # print(user['name'])
 # print(user.get('country'))
 # print(user.keys())
 # print(user.values())
+
+# person = {
+#     "name": "Simon",
+#     "age": 23,
+#     "isMaried": True
+# }
+# print(person['name'])
+# print(person.get('isMaried'))
+# print(person.keys())
+# print(person.values())
 
 # user = {
 #     'Simon': {
@@ -52,11 +61,11 @@
 # b = a.copy()
 # print(b)
 
-# a = {
-#     'name': 'Simon',
-#     'lname': 'Kabir'
-# }
-# print(a)
+a = {
+    'name': 'Simon',
+    'lname': 'Kabir'
+}
+print(a)
 # print(a.setdefault('fname', 'Jimon'))
 # print(a.setdefault('age', 27))
 # print(a)

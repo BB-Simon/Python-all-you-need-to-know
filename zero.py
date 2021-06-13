@@ -335,7 +335,7 @@
 # ---------------------------------
 # -----------Lists----------------
 # ----------------------------------
-myList = ['Simon', 'Jimon', 27, False, 5.4]
+# myList = ['Simon', 'Jimon', 27, False, 5.4]
 # print(myList)
 # print(type(myList))
 # print(type(myList[-1]))
@@ -362,22 +362,33 @@ myList = ['Simon', 'Jimon', 27, False, 5.4]
 # list2 = [5, 6, 7]
 # myList.append(list2)
 # print(myList)
+# list3 = ['list', 'three']
+# list3.append(myList)
+# print(list3)
+# print(list3[2][5][2])
+# print(list3[-1])
 
 # extend()
 # a = [1, 2, 3, 4]
-# b = [5, 6, 7, 8]
+# b = [3, 4, 5, 6, 7, 8]
+# c = ['new', 'list', 'for', 'extend', 'list', 'a', 'b', 'with bool', True, False]
 # a.extend(b)
 # print(a)
+# c.extend(a)
+# print(c)
 
 # remove()
-# a = [1, 2, 3, 4]
-# a.remove(2)
+# a = [1, 2, 3, 4, "text", True]
+# a.remove(True)
 # print(a)
 
 # sort()
 # a = [90, 23, -12, 2, 3, 4, 43]
 # a = ['a', 'A', 's', 'c', 'z', 'Z']
+# a.sort()
+# print(a)
 # a.sort(reverse=False)
+# print(a)
 # a.sort(reverse=True)
 # print(a)
 
@@ -403,6 +414,7 @@ myList = ['Simon', 'Jimon', 27, False, 5.4]
 # index()
 # a = ['a', 'A', 's', 1, 32, 90, -23]
 # print(a.index('A'))
+# print(a.index(1))
 
 # insert()
 # a = ['a', 'A', 's', 1, 32, 90, -23]
@@ -412,6 +424,7 @@ myList = ['Simon', 'Jimon', 27, False, 5.4]
 # pop()
 # a = ['a', 'A', 's', 1, 32, 90, -23]
 # print(a.pop(2))
+# print(a)
 
 # ----------------------------------
 # -----------Tuple------------------
@@ -438,15 +451,15 @@ myList = ['Simon', 'Jimon', 27, False, 5.4]
 # print(myTuple * 3)
 
 # ---------Tuple Methods----------
-# a = (1, 2, 3, 4, 2, 1, 4m, 6, 8, 0)
+# a = (1, 2, 3, 4, 2, 1, 4, 6, 8, 0)
 # print(a.count(2))
 # print(f'the Position of 6 is: {a.index(6)}')
 
 # ----------------------------------
 # -----------Set------------------
 # ----------------------------------
-# my_set = {'Simon', 'Jimon', 'Takmina', 100, True}
-# print(my_set)
+my_set = {'Simon', 'Jimon', 'Takmina', 'Souvo', 100, True}
+print(my_set)
 # my_set.clear()
 # print(my_set)
 
@@ -461,6 +474,7 @@ myList = ['Simon', 'Jimon', 27, False, 5.4]
 # a = my_set.copy()
 # my_set.add(50)
 # print(a)
+# print(my_set)
 
 # my_set.remove(100)
 # print(my_set)

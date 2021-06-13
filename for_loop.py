@@ -1,4 +1,8 @@
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# for num in numbers:
+#     print(num)
+
 # for number in numbers:
 #     if number % 2 == 0:
 #         print(f'The number: {number} is even')
@@ -9,9 +13,16 @@
 # for letter in name:
 #     print(f' [ {letter.upper()} ] ')
 
+# full_name = "Simon Kabir"
+# for x in full_name:
+#     print(f'({x.upper()})')
+
 # my_range = range(1, 51)
 # for number in my_range:
 #     print(number)
+
+# for x in range(1, 20):
+#     print(f'Your Fav Number is: ({x})')
 
 # Dictionary
 # skills = {
@@ -21,9 +32,11 @@
 #     'ReactJS': '92%',
 #     'VueJS': '79%'
 # }
+# print(skills['JS'])
+
 # for skill in skills:
-# print(skill)
-# print(f'My Prograss In Lang {skill} Is {skills[skill]}')
+#     print(skill)
+#     print(f'My Prograss In Lang {skill} Is {skills[skill]}')
 
 
 # names = ['Simon', 'Jimon', 'Takmina']
@@ -51,7 +64,6 @@
 #        'JS': '95%'
 #     }
 # }
-
 # print(names['Simon']['CSS'])
 
 # for name in names:
@@ -83,11 +95,11 @@
 # -------Advance Dictionary Loop------
 # ------------------------------------
 
-# skills = {
-#     'HTML': '87%',
-#     'CSS': '85%',
-#     'JS': '91%'
-# }
+skills = {
+    'HTML': '87%',
+    'CSS': '85%',
+    'JS': '91%'
+}
 
 # print(skills.items())
 
@@ -116,6 +128,23 @@
 #     print(f'{skill_key} Progress Is: ')
 #     for progress_key, progress_value in skill_value.items():
 #         print(f' - {progress_key} => {progress_value}')
+
+
+# user = {
+#     'simon': {
+#         'name': "simon",
+#         'age': 23
+#     },
+#     'jimon': {
+#         'name': "jimon",
+#         'age': 22
+#     }
+# }
+# print(user.items())
+# for x, y in user.items():
+#     print(f'user => ')
+#     for j, z in y.items():
+#         print(f'{j}: {z}')
 
 
 # a = [1, 2, 3, 4, 5, 6, 7, 8]
