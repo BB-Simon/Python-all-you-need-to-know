@@ -10,8 +10,10 @@
 
 # List
 # reletives = ['Simon', 'Jimon', 'Takmina']
-# print('Takmina' in firnds)
 # friends = ['John', 'Smith', 'Keli']
+# print('Takmina' in reletives)
+# print('Takmina' not in friends)
+# print('Takmina' in friends)
 
 # name = 'Takmina'
 # if name in reletives:
@@ -52,3 +54,4 @@ else:
         print(admins)
     else:
         print(f'Bey Bey {name}')
+  

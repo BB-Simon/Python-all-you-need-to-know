@@ -7,7 +7,7 @@
 # ----it has to be iterable------
 # a = 'Simon'
 # b = [1, 2, 3, 4, 5]
-# c = {'A', 'B', 10}
+ # c = {'A', 'B', 10}
 # d = {'a': 1, 'b': 2}
 # print(tuple(a))
 # print(tuple(b))

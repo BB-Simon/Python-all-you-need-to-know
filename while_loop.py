@@ -49,18 +49,18 @@
 #     print('It\'s Done...! Happy Codding')
 
 
-tries = 3
-my_havites = ['coding', 'eating', 'running']
-your_input = input('tell me on of my fav if you\'re my best freind: ')
+# tries = 3
+# my_havites = ['coding', 'eating', 'running']
+# your_input = input('tell me on of my fav if you\'re my best freind: ')
 
-while your_input not in my_havites:
-    tries -= 1
-    print(f"Oops...!,{'Last chance' if tries == 0 else f'{tries} chances'} Left")
-    your_input = input('tell me on of my fav if you\'re my best freind: ')
+# while your_input not in my_havites:
+#     tries -= 1
+#     print(f"Oops...!,{'Last chance' if tries == 0 else f'{tries} chances'} Left")
+#     your_input = input('tell me on of my fav if you\'re my best freind: ')
 
-    if tries == 0:
-        print('Oops! all chances are finished, come back letter')
-        break
-else:
-    print('it\'s awsome, you\'re my best friend')
+#     if tries == 0:
+#         print('Oops! all chances are finished, come back letter')
+#         break
+# else:
+#     print('it\'s awsome, you\'re my best friend')
 
