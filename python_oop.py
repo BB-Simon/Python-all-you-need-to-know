@@ -421,14 +421,14 @@ class Programming(metaclass=ABCMeta):
         pass
 
 
-class Python(Programming):
-    def has_oop(self):
-        return "Yes"
+# class Python(Programming):
+#     def has_oop(self):
+#         return "Yes"
 
 
-class Pascale(Programming):
-    def has_oop(self):
-        return "No"
+# class Pascale(Programming):
+#     def has_oop(self):
+#         return "No"
 
 
 # lang = Programming()
@@ -437,5 +437,5 @@ class Pascale(Programming):
 # lang = Python()
 # print(lang.has_oop())
 
-lang = Pascale()
-print(lang.has_oop())
+# lang = Pascale()
+# print(lang.has_oop())

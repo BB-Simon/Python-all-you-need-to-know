@@ -29,13 +29,15 @@
 # ----------------------------------------
 # ----Built in Functions Part_2-------
 # -----------------------------
-# some()
+# sum()
 # round()
 # range()
 # print()
 # -----------------------------
 # a = [10, 20, 30, 40]
+# b = []
 # print(sum(a))
+# print(sum(b))
 # print(sum(a, 30))
 
 # print(round(100.451))
@@ -97,6 +99,7 @@
 
 
 # txts = ['sImon', '   JimON', 'TakMiNA  ']
+
 # formateData = map(formateText, txts)
 # print(formateData)
 # for name in formateData:
@@ -111,8 +114,7 @@
 
 # With Lambda function
 # txts = ['sImon', '   JimON', 'TakMiNA  ']
-
-# for name in list(map(lambda txt: f' - {txt.strip().capitalize()} - ', txts)):
+# for name in map(lambda txt: f' - {txt.strip().capitalize()} - ', txts):
 #     print(name)
 
 # for name in list(map((lambda txt: f' - {txt.strip().capitalize()} - '), txts)):
@@ -125,7 +127,7 @@
 # filter()
 # --------------------------------
 # Filter Take a Function + Iteration
-# Filter Run Run A Function On Every Element
+# Filter Run A Function On Every Element
 # The Function Need To Return Boolean Value
 # Filter Out All Elements for Which The Function Return True.
 # The function can be a pree definded function or a lambda function
@@ -142,6 +144,7 @@
 # numbers = [1, 2, 3, 20, 10, 33, 5, 6]
 
 # res = filter(checkNumbers, numbers)
+# print(res)
 # for number in res:
 #     print(number)
 
@@ -198,7 +201,7 @@
 # reversed()
 # ----------------------------------------------------------------------
 
-skills = ['Html', 'CSS', 'JS', 'PHP']
+# skills = ['Html', 'CSS', 'JS', 'PHP']
 
 # res = enumerate(skills, 20)
 
@@ -208,6 +211,6 @@ skills = ['Html', 'CSS', 'JS', 'PHP']
 
 # print(help(str))
 
-for skill in reversed(skills):
-    print(skill)
+# for skill in reversed(skills):
+#     print(skill)
 

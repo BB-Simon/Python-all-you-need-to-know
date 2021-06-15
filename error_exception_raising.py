@@ -3,8 +3,8 @@
 # -------------------------------------------
 # [1] Exception is a runtime error reporting mechansm
 # [2] Exception give you the message to understand the problem
-# [3] Trackback give you theline to look for code on this line
-# [4] Exception hav etypes (SyntaxtError, IndexError, KeyError Etc...)
+# [3] Trackback give you the line to look for code on this line
+# [4] Exception have types (SyntaxtError, IndexError, KeyError Etc...)
 # [5] Exception List "https://docs.python.org/3/library/exceptions.html"
 # [6] raise keyword used to raise your own exceptions
 # -----------------------------------------------------
@@ -36,7 +36,6 @@
 # -----------------------------------------------------
 
 # num = int(input('Enter your age: '))
-
 # print(num)
 # print(type(num))
 
@@ -53,7 +52,7 @@
 # print(10/0)
 # try:
 #     print(10/0)
-#     print(x)
+#     # print(x)
 # except:
 #     print('Can\'t divied')
 
@@ -72,27 +71,26 @@
 #     print('error ocurred')
 
 # -----------------------Practical Example-------------------------
-# the_file = None
-# the_tries = 5
+the_file = None
+the_tries = 5
 
-# while the_tries > 0:
-#     try:
-#         print('Enter the file name with abs path: ')
-#         print('e.g example.txt')
-#         print(f"{the_tries} Tries Left")
-#         file_name = input('file name =>: ').strip()
-#         the_file = open(file_name, 'r')
-#         print(the_file.read())
-#         break
-#     except FileNotFoundError:
-#         print('file not found')
-#         the_tries -= 1
-#     except:
-#         print('error ocurred')
-#     finally:
-#         if the_file is not None:
-#             the_file.close()
-#             print('file closed')
-
-# else:
-#     print('All Tries Done')
+while the_tries > 0:
+    try:
+        print('Enter the file name with abs path: ')
+        print('e.g example.txt')
+        print(f"{the_tries} Tries Left")
+        file_name = input('file name =>: ').strip()
+        the_file = open(file_name, 'r')
+        print(the_file.read())
+        break
+    except FileNotFoundError:
+        print('file not found')
+        the_tries -= 1
+    except:
+        print('error ocurred')
+    finally:
+        if the_file is not None: 
+            the_file.close()
+            print('file closed')
+else:
+    print('All Tries Done')
