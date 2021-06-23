@@ -405,6 +405,25 @@
 # user.set_name('Jimon')
 # print(user.get_name())
 
+# class Person: 
+#     def __init__(self, name, age, email):
+#         self.__name = name
+#         self.__age = age
+#         self.__email = email
+    
+#     def get_person_info(self):
+#         return f'{self.__name.capitalize()}\'s details: \n Name: {self.__name} \n Age: {self.__age} \n Email: {self.__email}'
+
+#     def set_persom_info(self, new_name, new_age, new_email):
+#         self.__name = new_name
+#         self.__age = new_age
+#         self.__email = new_email
+
+
+# p1 = Person('Simon', 29, 'email@email.com')
+# print(p1.get_person_info())
+# p1.set_persom_info('jimon', 27, 'test@email.com')
+# print(p1.get_person_info())
 
 # ------------------------------------------------
 # --OOP-Part-13 => @Property Decorator---
