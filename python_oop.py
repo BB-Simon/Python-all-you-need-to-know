@@ -20,10 +20,15 @@
 #     def __init__(self):
 #         print('new member added')
 
-
 # m_one = Member()
 # m_two = Member()
 # print(m_one.__class__)
+
+# class SayHello:
+#     def __init__(self):
+#         print('Hello World!')
+
+# hello = SayHello()
 
 # ----------------------------------------------
 # --OPP-Part-2-3 => Instance Attributes and Methods
@@ -68,6 +73,26 @@
 # print(member_one.sayHello())
 # print(member_one.get_all_info())
 
+# class Person:
+#     def __init__(self, first_name, last_name, age, email, isMaried):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.age = age
+#         self.email = email
+#         self.isMaried = isMaried
+#     def sey_hi(self):
+#         return f'Hello {self.first_name}'
+
+#     def get_full_name(self):
+#         return f'{self.first_name} {self.last_name}'
+
+#     def get_all_info(self):
+#         return f'Name: {self.first_name} {self.last_name} \n Age: {self.age} \n Email: {self.email} \n IsMaried: {self.isMaried}'
+
+
+# person1 = Person('simon', 'Kabir', 29, 'test@email.com', False)
+# print(person1.get_all_info())
+# print(person1.get_full_name())
 
 # ---------------------------------------------
 # OOP-Part-4 => Class Attribute
@@ -108,7 +133,7 @@
 #         Member.user_count -= 1
 #         return f"user {self.f_name} is deleted"
 
-# print(Member.user_count)
+# # print(Member.user_count)
 # member_one = Member('Badre', 'Basem', 'Simon', 'Male')
 # member_two = Member('Takmina', 'Aktar', 'Idon', 'Female')
 # member_three = Member('shit', 'fuck', 'demn', 'dd')
@@ -173,6 +198,7 @@
 #         return f"user {self.f_name} is deleted"
 
 
+# Member.show_user_count()
 # member_one = Member('Badre', 'Basem', 'Simon', 'Male')
 # member_two = Member('Takmina', 'Aktar', 'Idon', 'Female')
 # member_three = Member('Takmina', 'Aktar', 'Idon', 'Female')
@@ -180,7 +206,7 @@
 # Member.show_user_count()
 # print('-' * 20)
 # print(member_one.full_name())
-# print(Member.full_name(member_one))
+# print(Member.full_name(member_three))
 # print('-' * 20)
 # Member.say_hi()
 
@@ -193,7 +219,7 @@
 # 'self.__class__' the class which a instance class belongs to
 # __str__ Gives a humen-readable output of the Object
 # __len__ Return the length of the container
-#         called whenwe use the built-in len() function on the object
+#         called when we use the built-in len() function on the object
 # -------------------------------------------------------
 
 # class Skills:
@@ -204,7 +230,7 @@
 #         return len(self.skills)
 
 #     def __str__(self):
-#         return f"my Skills {self.skills}"
+#         return f"My Skills {self.skills}"
 
 
 # my_skills = Skills()
@@ -235,23 +261,23 @@
 #         print(f'{self.name} from Base class')
 
 #     def eat(self):
-#         print('I eat pizza from base class')
+#         print(f'I eat {self.name} from base class')
 
 
 # class Apple(Food):
 #     def __init__(self, name, price, amount):
-#         # Food.__init__(self, name)
+#         # Food.__init__(self, name, price) # super() method is in place of it
 #         super().__init__(name, price)
 #         self.amount = amount
 #         print(
 #             f'{self.name} from child class and price {self.price} and amount {self.amount}')
 
 #     def get_apple(self):
-#         print('got apple from tree')
+#         print(f'got {self.name} from tree')
 
 
-# my_food = Food('pizza')
-# my_apple = Apple('Pizza', 120, 30)
+# # my_food = Food('pizza', 20)
+# my_apple = Apple('Apple', 120, 30)
 # my_apple.eat()
 # my_apple.get_apple()
 
@@ -411,14 +437,14 @@
 # ABCMeta class is Meta class used for defining abstract base class
 # -------------------------------------------------------------
 
-from abc import ABCMeta, abstractmethod
+# from abc import ABCMeta, abstractmethod
 
 
-class Programming(metaclass=ABCMeta):
+# class Programming(metaclass=ABCMeta):
 
-    @abstractmethod
-    def has_oop(self):
-        pass
+#     @abstractmethod
+#     def has_oop(self):
+#         pass
 
 
 # class Python(Programming):
