@@ -31,15 +31,15 @@ gen = myGenerator()
 # print('Hello')
 # print(next(gen))
 
-print(next(gen))
-print('Hi')
-print(next(gen))
+# print(next(gen))
+# print('Hi')
+# print(next(gen))
 
-print("*" * 30)
+# print("*" * 30)
 
-for num in gen:
-    print(num)
+# for num in gen:
+#     print(num)
 
-print("*" * 30)
-for num in myGenerator():
-    print(num)
+# print("*" * 30)
+# for num in myGenerator():
+#     print(num)

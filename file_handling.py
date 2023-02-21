@@ -5,13 +5,15 @@
 # "w": write    => Open file for wrinting, Create file if not exists.
 # "x": create   => Craete File, Give error if file exists.
 # ---------------------------------------------------------------------------------------
-# import os
+import os
 
+# print(os)
 # print(os.getcwd())
-# print(os.path.dirname(os.path.abspath(__file__)))
+# print(os.path)
 # print(os.path.abspath(__file__))
+# print(os.path.dirname(os.path.abspath(__file__)))
 
-# my_file = open('simon.txt')
+# my_file = open('test.txt')
 # print(my_file)
 # print(my_file.name)
 # print(my_file.mode)
@@ -56,7 +58,7 @@
 # my_file.write('and who are you\n')
 
 # my_file = open('test2.txt', 'a')
-# my_file.truncate(5)
+# my_file.truncate(3)
 
 # my_file = open('test2.txt', 'a')
 # print(my_file.tell())

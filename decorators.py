@@ -57,11 +57,16 @@
 
 
 # @mydec
-# @mydecTwo
 # def sum(a, b):
 #     print(a + b)
 
-# sum(6, 9)
+# sum(2, 12)
+
+# @mydecTwo
+# def sum_two(a, b):
+#     print(a + b)
+
+# sum_two(6, 9)
 
 # ------------------------------------------------------
 # -------Decorator = Practical Speed Test-----
@@ -74,11 +79,10 @@
 #         fun(*numbers)
 #     return innerFun
 
-
+ 
 # @myDec
 # def sum(a, b, c):
 #     print(a+b+c)
-
 
 # sum(10, 10, -10)
 
@@ -86,21 +90,20 @@
 # ------------------
 from time import time
 
+# def myDec(fun):
+#     def wrapper():
+#         start = time()
+#         fun()
+#         end = time()
+#         print(f'function running time is: {end - start}')
 
-def myDec(fun):
-    def wrapper():
-        start = time()
-        fun()
-        end = time()
-        print(f'function running time is: {end - start}')
-
-    return wrapper
-
-
-@myDec
-def bigLoop():
-    for number in range(1, 2000):
-        print(number)
+#     return wrapper
 
 
-bigLoop()
+# @myDec
+# def bigLoop():
+#     for number in range(1, 2000):
+#         print(number)
+
+
+# bigLoop()
