@@ -84,6 +84,7 @@
 # b = "2"
 # print(a + b)
 # print(int(a) + int(b))
+# print(type(int()))
 
 # -----------------
 # String
@@ -91,6 +92,7 @@
 
 # name = 'Simon'
 # print(name[-1])
+# print(name[-2])
 # print(name[-5])
 
 # Slicing
@@ -107,11 +109,21 @@
 # print(name.rstrip())
 # print(name.lstrip())
 
+# msg = '&&&&&I love Python*******'
+# print(msg.strip("*"))
+# print(msg.strip("&"))
+
 # title = 'i love 2d Grafich and 3d technology'
 # print(title.title())
 # print(title.capitalize())
 # print(title.upper())
 # print(title.lower())
+
+# subtitle = 'I Want to be a software engeneer'
+# print(subtitle.title())
+# print(subtitle.capitalize())
+# print(subtitle.upper())
+# print(subtitle.lower())
 
 # msg = 'Hello simon'
 # print(msg.capitalize())
@@ -128,11 +140,18 @@
 # a = 'I Love Python'
 # print(a.split())
 # print(a.rsplit())
+# print(type(a.rsplit()))
+
+# b = 'Apple,Orange,Banana'
+# print(b.split(',', 5))
+
+# c = 'Simon-Jimon-Takmina'
+# print(c.split('-'))
 
 # center()
 # name = 'Simon'
 # print(name.center(20))
-# print(name.center(20, "*"))
+# print(name.center(7, "*"))
 # print(name.center(20, "@"))
 
 # count()
@@ -155,14 +174,16 @@
 # print(a.endswith("n"))
 
 # index(substring, start, end)
-# a = 'I Love Python'
+# a = 'I Love Python Play'
+# print(a.index('P'))
 # print(a.index('P', 0, 8))
-# print(a.index('a', 0, 8))
+# print(a.index('a', 0, 8)) # give valueError
+
 # print(a.find('P', 0, 8))
-# print(a.find('a', 0, 8))
+# print(a.find('a', 0, 8)) # return -1
 
 # rjust(width, fill_char) ljust(width, fill_char)
-# a = 'I Love Python'
+a = 'I Love Python'
 # print(a.rjust(20))
 # print(a.rjust(20, '$'))
 # print(a.rjust(20, '*'))
@@ -203,7 +224,8 @@
 
 # a = 'i love python'
 # b = 'I Love python'
-# print(a.islower(), b.islower())
+# c = 'IS UPPER'
+# print(a.islower(), b.islower(), c.isupper())
 
 # a = 'simon_kabir'
 # b = 'simon--kabir'
@@ -458,8 +480,8 @@
 # ----------------------------------
 # -----------Set------------------
 # ----------------------------------
-my_set = {'Simon', 'Jimon', 'Takmina', 'Souvo', 100, True}
-print(my_set)
+# my_set = {'Simon', 'Jimon', 'Takmina', 'Souvo', 100, True}
+# print(my_set)
 # my_set.clear()
 # print(my_set)
 
