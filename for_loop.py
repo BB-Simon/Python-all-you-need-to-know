@@ -1,4 +1,4 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # for num in numbers:
 #     print(num)
@@ -11,7 +11,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # name = 'simon'
 # for letter in name:
-#     print(f' [ {letter.upper()} ] ')
+#     print(f' [{letter.upper().center(11, "*")}] ')
 
 # full_name = "Simon Kabir"
 # for x in full_name:
@@ -21,7 +21,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # for number in my_range:
 #     print(number)
 
-# for x in range(1, 20):
+# for x in range(1, 21):
 #     print(f'Your Fav Number is: ({x})')
 
 # Dictionary
@@ -34,9 +34,8 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # }
 # print(skills['JS'])
 
-# for skill in skills:
-#     print(skill)
-#     print(f'My Prograss In Lang {skill} Is {skills[skill]}')
+# for i in skills:
+#     print(f'My Prograss In Lang {i} Is {skills[i]}')
 
 
 # names = ['Simon', 'Jimon', 'Takmina']
@@ -75,7 +74,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # ----------------------------------
 # -------Break, Continue, Pass------
 # ----------------------------------
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 # for number in numbers:
 #     if number == 6:
 #         continue
@@ -95,11 +94,11 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # -------Advance Dictionary Loop------
 # ------------------------------------
 
-skills = {
-    'HTML': '87%',
-    'CSS': '85%',
-    'JS': '91%'
-}
+# skills = {
+#     'HTML': '87%',
+#     'CSS': '85%',
+#     'JS': '91%'
+# }
 
 # print(skills.items())
 
@@ -123,6 +122,11 @@ skills = {
 #         'React': '87%'
 #     }
 # }
+
+# for key, value in skills.items():
+#     print(f'{key} =>')
+#     for keyLang, valueLang in value.items():
+#         print(f'  {keyLang}: {valueLang}')
 
 # for skill_key, skill_value in skills.items():
 #     print(f'{skill_key} Progress Is: ')
