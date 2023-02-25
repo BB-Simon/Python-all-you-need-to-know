@@ -1,5 +1,5 @@
 name = 'Simon'
-country = 'Bangladesh'
+country = 'KSA'
 city = 'Bibaria'
 village = 'Korighor'
 
@@ -12,5 +12,7 @@ if country == 'Bangladesh':
 elif country == 'Egypt':
     if city == 'Cairo':
         print(f'You Are My Heart {name} And You Are My Mate')
+elif country == 'KSA':
+    print(f'You Are My Heart {name} And I love you :)')
 else:
     print(f'It\'s Ok {name}')

@@ -183,7 +183,7 @@
 # print(a.find('a', 0, 8)) # return -1
 
 # rjust(width, fill_char) ljust(width, fill_char)
-a = 'I Love Python'
+# a = 'I Love Python'
 # print(a.rjust(20))
 # print(a.rjust(20, '$'))
 # print(a.rjust(20, '*'))
@@ -315,6 +315,7 @@ a = 'I Love Python'
 # age = 27
 # print('name is: {name} and my age is: {age}')
 # print(f'name is: {name} and my age is: {age}')
+# print(f'Hey there you name is: {name} and you are {age} years old')
 
 
 # ---------------------------------
@@ -326,7 +327,6 @@ a = 'I Love Python'
 # print(int(10+3j))
 
 # ----------Arithmetic Operators-----------------
-
 # print(-30 - 20)
 # print(-30 - -10)
 # print(2.44 - 10.3)
@@ -351,6 +351,7 @@ a = 'I Love Python'
 # print(100 // 20)
 # print(110 // 20)
 # print(119 // 20)
+# print(119 / 20)
 # print(120 // 20)
 
 
@@ -402,6 +403,7 @@ a = 'I Love Python'
 # remove()
 # a = [1, 2, 3, 4, "text", True]
 # a.remove(True)
+# a.remove(4)
 # print(a)
 
 # sort()
@@ -427,6 +429,7 @@ a = 'I Love Python'
 # copy()
 # a = ['a', 'A', 's', 1, 32, 90, -23]
 # b = a.copy()
+# print(a)
 # print(b)
 
 # count()
@@ -437,6 +440,7 @@ a = 'I Love Python'
 # a = ['a', 'A', 's', 1, 32, 90, -23]
 # print(a.index('A'))
 # print(a.index(1))
+# print(a.index(1000))
 
 # insert()
 # a = ['a', 'A', 's', 1, 32, 90, -23]
@@ -474,8 +478,11 @@ a = 'I Love Python'
 
 # ---------Tuple Methods----------
 # a = (1, 2, 3, 4, 2, 1, 4, 6, 8, 0)
+# b = ('Simon', True, 32, 20.00)
 # print(a.count(2))
 # print(f'the Position of 6 is: {a.index(6)}')
+# print(f'the Position of {32}')
+# print(b)
 
 # ----------------------------------
 # -----------Set------------------
@@ -484,9 +491,10 @@ a = 'I Love Python'
 # print(my_set)
 # my_set.clear()
 # print(my_set)
+# print(my_set)
 
-# b = {'Souvo', 'Jannat', 'Nyma'}
-# c = {True, 'Badr'}
+# b = {"One"}
+# c = {"Two"}
 # print(my_set | b)
 # print(my_set.union(b, c))
 
@@ -517,7 +525,6 @@ a = 'I Love Python'
 # b = {3, 4 , 5, 6}
 # print(a - b)
 # print(a.difference(b))
-# print(a)
 # print(a)
 # a.difference_update(b)
 # print(a)
@@ -557,6 +564,4 @@ a = 'I Love Python'
 # a = {1, 2, 3, 4, 'B'}
 # b = {5, 6, 7, 8}
 # print(a.isdisjoint(b))
-
-
 

@@ -19,6 +19,6 @@ elif unit == 'weeks' or unit == 'w':
     print(f'You Lived For: {weeks:,} Weeks')
 elif unit == 'days' or unit == 'd':
     print('You Select Days')
-    print(f'You Lived For: {days:,} Days')
+    print(f'You Lived For: {days:_} Days')
 else:
     print('You selected something from out the box')

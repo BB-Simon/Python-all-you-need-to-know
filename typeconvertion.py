@@ -7,7 +7,7 @@
 # ----it has to be iterable------
 # a = 'Simon'
 # b = [1, 2, 3, 4, 5]
- # c = {'A', 'B', 10}
+# c = {'A', 'B', 10}
 # d = {'a': 1, 'b': 2}
 # print(tuple(a))
 # print(tuple(b))
@@ -25,7 +25,7 @@
 # print(list(d))
 
 # ----set()-----
-# a = 'Simon'
+# a = 'Simonn'
 # b = (1, 2, 3, 4, 5)
 # c = ['A', 'B', 10]
 # d = {'a': 1, 'b': 2}
@@ -35,7 +35,9 @@
 # print(set(d))
 
 # ----dict()-----
-b = (('A', 1), ('B', 2), ('C', 3))
-c = [['One', 1], ['Two', 2], ['Three', 3]]
-print(dict(b))
-print(dict(c))
+# a = 'Simon'
+# b = (('A', 1), ('B', 2), ('C', 3))
+# c = [['One', 1], ['Two', 2], ['Three', 3]]
+# print(dict(a))
+# print(dict(b))
+# print(dict(c))

@@ -21,7 +21,7 @@ name = 'Simon'
 age = 28
 country = 'Bangladesh'
 
-print(name == 'Simon' and age > 20 and country == 'Bangladesh')
+# print(name == 'Simon' and age > 20 and country == 'Bangladesh')
 # print(name == 'Jimon' or age > 20 or country == 'Egypt')
 # print(not age > 20)
 # print(not age < 20)

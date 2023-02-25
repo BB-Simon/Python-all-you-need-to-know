@@ -44,7 +44,6 @@
 #         print(admins)
 #     else:
 #         print('Wrong Selection')
-
 # else:
 #     status = input(
 #         'You are not admin, add you? Y or N?? ').strip().capitalize()
