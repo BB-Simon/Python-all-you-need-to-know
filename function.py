@@ -47,6 +47,7 @@
 
 # The Solution
 # def hello(*names):
+#     print(f'names =>  {names}')
 #     for name in names:
 #         print(f'Hello {name}')
 
@@ -79,7 +80,7 @@
 # -------------------------------------------------
 
 # def show_skills(*skills):
-    # print(type(skills))
+#     print(type(skills))
 #     for skill in skills:
 #         print(f' - {skill}')
 
@@ -87,6 +88,7 @@
 
 # def show_skills(**skills):
 #     print(type(skills))
+#     print(skills)
 #     for skill, value in skills.items():
 #         print(f' - {skill} => {value}')
 
@@ -108,6 +110,7 @@
 
 # def show_skills(**skills):
 #     print(type(skills))
+#     print(skills)
 #     for skill, value in skills.items():
 #         print(f' - {skill} => {value}')
 
@@ -155,7 +158,7 @@
 
 
 # def One():
-# global x
+# # global x
 #     x = 2
 #     print(f'X from function Scope {x}')
 
@@ -196,6 +199,24 @@
 
 
 # print(cleen_word('wwwooorrrldd'))
+
+# i = 6
+# while i > 0:
+#     print(f'i => {i}')
+#     i-= 1
+
+# print('*' * 30)
+# def recurse(num):
+#     print(f'num => {num}')
+#     print('*' * 30)
+#     if num > 0:
+#         result = num + recurse(num - 1)
+#         print(f'res => {result}')
+#     else:
+#        result = 0
+#     return result
+
+# print(recurse(6))
 
 
 # --------------------------------------------------
