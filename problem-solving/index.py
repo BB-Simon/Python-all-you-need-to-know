@@ -12,4 +12,18 @@ def anagram(s):
             b.remove(i)    
     return c
 
-print(anagram('xyyx'))
+# print(anagram('xyyx'))
+
+def makingAnagrams(s1, s2):
+    s1 = list(s1)
+    s2 = list(s2)
+    i = 0
+    while i < len(s1):
+        if s1[i] in s2:
+            s2.remove(s1[i])
+            s1.remove(s1[i])
+            continue
+        i += 1
+    return len(s1) + len(s2)
+
+# print(makingAnagrams('abc', 'amnop'))
